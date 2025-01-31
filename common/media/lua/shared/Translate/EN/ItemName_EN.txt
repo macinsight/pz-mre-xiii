@@ -116,13 +116,13 @@
 	ItemName_USMRE.MRECuppaCocoaWhite = "Cocoa",
 	ItemName_USMRE.MRECuppaCocoaSpiffo = "Cocoa",
 
-	ItemName_USMRE.MREBevBasewithSugarCuppa = "Bev Base with Sugar",
-	ItemName_USMRE.MREBevBasewithSugarCuppaRed = "Bev Base with Sugar",
-	ItemName_USMRE.MREBevBasewithSugarCuppaWhite = "Bev Base with Sugar",
-	ItemName_USMRE.MREBevBasewithSugarCuppaSpiffo = "Bev Base with Sugar",
+	ItemName_USMRE.MREBevBasewithSugarCuppa = "Sugary Beverage",
+	ItemName_USMRE.MREBevBasewithSugarCuppaRed = "Sugary Beverage",
+	ItemName_USMRE.MREBevBasewithSugarCuppaWhite = "Sugary Beverage",
+	ItemName_USMRE.MREBevBasewithSugarCuppaSpiffo = "Sugary Beverage",
 
-	ItemName_USMRE.MRESugarFreeBevBaseCuppa = "Sugarfree Beverage Base",
-	ItemName_USMRE.MRESugarFreeBevBaseCuppaRed = "Sugarfree Beverage Base",
-	ItemName_USMRE.MRESugarFreeBevBaseCuppaWhite = "Sugarfree Beverage Base",
-	ItemName_USMRE.MRESugarFreeBevBaseCuppaSpiffo = "Sugarfree Beverage Base",
+	ItemName_USMRE.MRESugarFreeBevBaseCuppa = "Sugarfree Beverage",
+	ItemName_USMRE.MRESugarFreeBevBaseCuppaRed = "Sugarfree Beverage",
+	ItemName_USMRE.MRESugarFreeBevBaseCuppaWhite = "Sugarfree Beverage",
+	ItemName_USMRE.MRESugarFreeBevBaseCuppaSpiffo = "Sugarfree Beverage",
 }
