@@ -1,0 +1,34 @@
+Recipe_ES = {
+
+-- Encoding Cp1252
+-- MRE XIII (1993) - Meal Ready to Eat MOD
+-- Translated by THE COURIER
+
+  CreackersApplyIngredient = "Aplicar condimento en galleta salada",
+  Heatwithaheater = "Calentar con la compresa caliente",
+  Inserthotsauce = "Agregar salsa picante",
+  Pourwater = "Agregar agua",
+
+  OpenMREpackage = "Abrir paquete de MREs",
+  PutofMREboxonpallet1 = "Poner MRE en el pale",
+  PutofMREboxonpallet2 = "Poner MRE en el pale",
+  PutofMREboxonpallet3 = "Poner MRE en el pale",
+  PutofMREboxonpallet4 = "Poner MRE en el pale",
+  PutofMREboxonpallet5 = "Poner MRE en el pale",
+  PutofMREboxonpallet6 = "Poner MRE en el pale",
+  PutofMREboxonpallet7 = "Poner MRE en el pale",
+  PutofMREboxonpallet8 = "Poner MRE en el pale",
+  PutofMREboxonpallet9 = "Poner MRE en el pale",
+  PutofMREboxonpallet10 = "Poner MRE en el pale",
+  PutofMREboxonpallet11 = "Poner MRE en el pale",
+  PutofMREboxonpallet12 = "Poner MRE en el pale",
+  RemoveMREboxfrompallet = "Quitar MRE del pale",
+  PlaceMREinBox = "Poner MRE en la caja"
+  OpenMREAccessoryPacket = "Abrir paquete de accesorios de mre"
+  OpenMREBox = "Abri caja de MREs"
+
+  MakeMRECuppa = "Servir taza",
+  MakeMRECuppaCocoa = "Servir taza de chocolate",
+  MakeMREBevBasewithSugarCuppa = "Servir taza de bebida azucarada",
+  MakeMRESugarFreeBevBase = "Servir taza de bebida con endulzante",
+}

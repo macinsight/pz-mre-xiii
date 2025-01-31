@@ -1,0 +1,11 @@
+Fluids_ES = {
+
+-- Encoding Cp1252
+-- MRE XIII (1993) - Meal Ready to Eat MOD
+-- Translated by THE COURIER
+
+  Fluid_Name_USMRE_Cuppa = "Cafe de MRE",
+  Fluid_Name_USMRE_CuppaCocoa = "Chocolate de MRE",
+  Fluid_Name_USMRE_BevBasewithSugarCuppa = " Bebida base con azucar MRE",
+  Fluid_Name_USMRE_SugarFreeBevBaseCuppa = "Bebida base con endulzante MRE",
+}

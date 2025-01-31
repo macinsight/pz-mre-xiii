@@ -1,0 +1,11 @@
+Fluids_PTBR = {
+
+-- Encoding Cp1252
+-- MRE XIII (1993) - Meal Ready to Eat MOD
+-- Translated by Sr_Urso
+
+  Fluid_Name_USMRE_Cuppa = "MRE Café",
+  Fluid_Name_USMRE_CuppaCocoa = "MRE Chocolate Quente",
+  Fluid_Name_USMRE_BevBasewithSugarCuppa = "Base de Bebida MRE com Açúcar",
+  Fluid_Name_USMRE_SugarFreeBevBaseCuppa = "Base de Bebida MRE Sem Açúcar",
+}

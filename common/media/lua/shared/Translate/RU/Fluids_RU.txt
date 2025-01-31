@@ -1,0 +1,11 @@
+Fluids_RU = {
+
+-- Encoding UTF-8
+-- MRE XIII (1993) - Meal Ready to Eat MOD
+-- Translated by BINARISSHOW
+
+  Fluid_Name_USMRE_Cuppa = "MRE Кофе",
+  Fluid_Name_USMRE_CuppaCocoa = "MRE Какао",
+  Fluid_Name_USMRE_BevBasewithSugarCuppa = "Основа напитка MRE с сахаром",
+  Fluid_Name_USMRE_SugarFreeBevBaseCuppa = "Основа напитка MRE без сахара",
+}

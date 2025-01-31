@@ -1,0 +1,34 @@
+Recipe_RU = {
+
+-- Encoding UTF-8
+-- MRE XIII (1993) - Meal Ready to Eat MOD
+-- Translated by BINARISSHOW
+
+  CreackersApplyIngredient = "Ингредиент для подачи крекеров",
+	Heatwithaheater = "Разогреть с помощью нагревателя",
+	Inserthotsauce = "Добавить острый соус",
+	Pourwater = "Налить воду",
+
+	OpenMREpackage = "Открыть пакет MRE",
+  PutofMREboxonpallet1 = "Положить коробку MRE на поддон",
+  PutofMREboxonpallet2 = "Положить коробку MRE на поддон",
+  PutofMREboxonpallet3 = "Положить коробку MRE на поддон",
+  PutofMREboxonpallet4 = "Положить коробку MRE на поддон",
+  PutofMREboxonpallet5 = "Положить коробку MRE на поддон",
+  PutofMREboxonpallet6 = "Положить коробку MRE на поддон",
+  PutofMREboxonpallet7 = "Положить коробку MRE на поддон",
+  PutofMREboxonpallet8 = "Положить коробку MRE на поддон",
+  PutofMREboxonpallet9 = "Положить коробку MRE на поддон",
+  PutofMREboxonpallet10 = "Положить коробку MRE на поддон",
+  PutofMREboxonpallet11 = "Положить коробку MRE на поддон",
+  PutofMREboxonpallet12 = "Положить коробку MRE на поддон",
+	RemoveMREboxfrompallet = "Достать коробку MRE с поддона",
+  PlaceMREinBox = "Положить MRE в коробку"
+  OpenMREAccessoryPacket = "Открыть упаковку принадлежностей MRE"
+  OpenMREBox = "Открыть коробку MRE"
+
+  MakeMRECuppa = "Приготовить напиток",
+  MakeMRECuppaCocoa = "Приготовить шоколадный напиток",
+  MakeMREBevBasewithSugarCuppa = "Приготовить напиток с сахаром",
+  MakeMRESugarFreeBevBase = "Приготовить напиток без сахара",
+}

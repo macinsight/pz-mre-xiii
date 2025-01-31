@@ -1,0 +1,34 @@
+Recipe_PTBR = {
+
+-- Encoding Cp1252
+-- MRE XIII (1993) - Meal Ready to Eat MOD
+-- Translated by Sr_Urso
+
+  CreackersApplyIngredient = "Aplicar Ingrediente em Biscoitos",
+  Heatwithaheater = "Aqueça com um Aquecedor",
+  Inserthotsauce = "Adicione Molho Picante",
+  Pourwater = "Adicione Água",
+
+  OpenMREpackage = "Abra o Pacote de Ração MRE",
+  PutofMREboxonpallet1 = "Coloque a Caixa de Rações no Palete",
+  PutofMREboxonpallet2 = "Coloque a Caixa de Rações no Palete",
+  PutofMREboxonpallet3 = "Coloque a Caixa de Rações no Palete",
+  PutofMREboxonpallet4 = "Coloque a Caixa de Rações no Palete",
+  PutofMREboxonpallet5 = "Coloque a Caixa de Rações no Palete",
+  PutofMREboxonpallet6 = "Coloque a Caixa de Rações no Palete",
+  PutofMREboxonpallet7 = "Coloque a Caixa de Rações no Palete",
+  PutofMREboxonpallet8 = "Coloque a Caixa de Rações no Palete",
+  PutofMREboxonpallet9 = "Coloque a Caixa de Rações no Palete",
+  PutofMREboxonpallet10 = "Coloque a Caixa de Rações no Palete",
+  PutofMREboxonpallet11 = "Coloque a Caixa de Rações no Palete",
+  PutofMREboxonpallet12 = "Coloque a Caixa de Rações no Palete",
+  RemoveMREboxfrompallet = "Remova a Caixa de Rações do Palete",
+  PlaceMREinBox = "Coloque a Ração MRE na Caixa",
+  OpenMREAccessoryPacket = "Abra o Pacote de Acessórios da Ração MRE",
+  OpenMREBox = "Abra a Caixa de Rações MRE",
+
+  MakeMRECuppa = "Prepare uma Bebida",
+  MakeMRECuppaCocoa = "Prepare uma Bebida de Chocolate",
+  MakeMREBevBasewithSugarCuppa = "Prepare uma Bebida com Açúcar",
+  MakeMRESugarFreeBevBase = "Prepare uma Bebida Sem Açúcar",
+}
