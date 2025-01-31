@@ -1,6 +1,5 @@
-name=MRE XIII 2.0
-author=macinsight
-description=A redesign of MRE XIII
+id=mrexiii
+name=MRE XIII Redeveloped
+description=Fooo!
+icon=icon.png
 poster=poster.png
-versionMin=42
-
