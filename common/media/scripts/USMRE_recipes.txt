@@ -1,0 +1,487 @@
+
+/*** MRE XIII (1993) - Meal Ready to Eat MOD Real version ***/
+
+/*** 2022-01-04 Version 4.03 ***/
+
+module USMRE
+
+{
+	imports
+	{
+	Base
+	}
+
+	craftRecipe OpenMREBox
+		{
+		inputs {
+      item 1 [USMRE.MREbox],
+    }
+		outputs {
+      item 1 USMRE.MREmenu01,
+      item 1 USMRE.MREmenu02,
+      item 1 USMRE.MREmenu03,
+      item 1 USMRE.MREmenu04,
+      item 1 USMRE.MREmenu05,
+      item 1 USMRE.MREmenu06,
+      item 1 USMRE.MREmenu07,
+      item 1 USMRE.MREmenu08,
+      item 1 USMRE.MREmenu09,
+      item 1 USMRE.MREmenu10,
+      item 1 USMRE.MREmenu11,
+      item 1 USMRE.MREmenu12,
+    }
+		Time=12,
+		Category=Cooking,
+    Tags = InHandCraft;Cooking;CanBeDoneInDark,
+		}
+
+	craftRecipe PlaceMREinBox
+		{
+      inputs
+      {
+        item 1 [USMRE.MREmenu01],
+        item 1 [USMRE.MREmenu02],
+        item 1 [USMRE.MREmenu03],
+        item 1 [USMRE.MREmenu04],
+        item 1 [USMRE.MREmenu05],
+        item 1 [USMRE.MREmenu06],
+        item 1 [USMRE.MREmenu07],
+        item 1 [USMRE.MREmenu08],
+        item 1 [USMRE.MREmenu09],
+        item 1 [USMRE.MREmenu10],
+        item 1 [USMRE.MREmenu11],
+        item 1 [USMRE.MREmenu12],
+      }
+		outputs {
+      item 1 USMRE.MREbox,
+    }
+		Time=12,
+		Category=Cooking,
+    Tags = InHandCraft;Cooking;CanBeDoneInDark,
+		}
+
+	craftRecipe OpenMREpackage
+		{
+		inputs {
+      item 1 [USMRE.MREmenu01;USMRE.MREmenu02;USMRE.MREmenu03;USMRE.MREmenu04;USMRE.MREmenu05;USMRE.MREmenu06;USMRE.MREmenu07;USMRE.MREmenu08;USMRE.MREmenu09;USMRE.MREmenu10;USMRE.MREmenu11;USMRE.MREmenu12] mappers[MRETypes],
+    }
+		outputs {
+      item 1 USMRE.MRESpoon,
+      item 1 USMRE.MRECrackers,
+      item 1 USMRE.MREFlamelessRationHeater,
+      item 1 USMRE.MREHotSource,
+      item 1 mapper:MRETypes,
+    }
+    OnCreate = OnOpenMREPacket,
+    itemMapper MRETypes
+    {
+      USMRE.MREPorkwithRiceinBBQSauce = USMRE.MREmenu01,
+      USMRE.MRECornedBeefHash = USMRE.MREmenu02,
+      USMRE.MREChickenStew = USMRE.MREmenu03,
+      USMRE.MREOmeletwithHam = USMRE.MREmenu04,
+      USMRE.MRESpaghettiwithMeatSauce = USMRE.MREmenu05,
+      USMRE.MREChickenalaKing = USMRE.MREmenu06,
+      USMRE.MREBeefStew = USMRE.MREmenu07,
+      USMRE.MREHamSlice = USMRE.MREmenu08,
+      USMRE.MREMeatballswithTomatoSauce = USMRE.MREmenu09,
+      USMRE.MRETunawithNoodles = USMRE.MREmenu10,
+      USMRE.MREChickenwithRice = USMRE.MREmenu11,
+      USMRE.MREEscallopedPotatoeswithHam = USMRE.MREmenu12,
+    }
+		Time=2,
+		Category=Cooking,
+    Tags = InHandCraft;Cooking;CanBeDoneInDark,
+		}
+
+  craftRecipe Heatwithaheater
+		{
+		inputs
+    {
+      item 1 [USMRE.MREFlamelessRationHeater],
+      item 1 [USMRE.MREPorkwithRiceinBBQSauce;USMRE.MRECornedBeefHash;USMRE.MREChickenStew;USMRE.MREOmeletwithHam;USMRE.MRESpaghettiwithMeatSauce;USMRE.MREChickenalaKing;USMRE.MREBeefStew;USMRE.MREHamSlice;USMRE.MREMeatballswithTomatoSauce;USMRE.MRETunawithNoodles;USMRE.MREChickenwithRice;USMRE.MREEscallopedPotatoeswithHam;USMRE.MREPorkwithRiceinBBQSauceS;USMRE.MRECornedBeefHashS;USMRE.MREChickenStewS;USMRE.MREOmeletwithHamS;USMRE.MRESpaghettiwithMeatSauceS;USMRE.MREChickenalaKingS;USMRE.MREBeefStewS;USMRE.MREHamSliceS;USMRE.MREMeatballswithTomatoSauceS;USMRE.MRETunawithNoodlesS;USMRE.MREChickenwithRiceS;USMRE.MREEscallopedPotatoeswithHamS] mappers[HeatWithAHeater],
+      item 1 [*],
+      -fluid 1 [Water],
+    }
+		outputs {
+      item 1 mapper:HeatWithAHeater,
+    }
+    itemMapper HeatWithAHeater
+    {
+      USMRE.MREPorkwithRiceinBBQSauceHot = USMRE.MREPorkwithRiceinBBQSauce,
+      USMRE.MRECornedBeefHashHot = USMRE.MRECornedBeefHash,
+      USMRE.MREChickenStewHot = USMRE.MREChickenStew,
+      USMRE.MREOmeletwithHamHot = USMRE.MREOmeletwithHam,
+      USMRE.MRESpaghettiwithMeatSauceHot = USMRE.MRESpaghettiwithMeatSauce,
+      USMRE.MREChickenalaKingHot = USMRE.MREChickenalaKing,
+      USMRE.MREBeefStewHot = USMRE.MREBeefStew,
+      USMRE.MREHamSliceHot = USMRE.MREHamSlice,
+      USMRE.MREMeatballswithTomatoSauceHot = USMRE.MREMeatballswithTomatoSauce,
+      USMRE.MRETunawithNoodlesHot = USMRE.MRETunawithNoodles,
+      USMRE.MREChickenwithRiceHot = USMRE.MREChickenwithRice,
+      USMRE.MREEscallopedPotatoeswithHamHot = USMRE.MREEscallopedPotatoeswithHam,
+      USMRE.MREPorkwithRiceinBBQSauceHotS = USMRE.MREPorkwithRiceinBBQSauceS,
+      USMRE.MRECornedBeefHashHotS = USMRE.MRECornedBeefHashS,
+      USMRE.MREChickenStewHotS = USMRE.MREChickenStewS,
+      USMRE.MREOmeletwithHamHotS = USMRE.MREOmeletwithHamS,
+      USMRE.MRESpaghettiwithMeatSauceHotS = USMRE.MRESpaghettiwithMeatSauceS,
+      USMRE.MREChickenalaKingHotS = USMRE.MREChickenalaKingS,
+      USMRE.MREBeefStewHotS = USMRE.MREBeefStewS,
+      USMRE.MREHamSliceHotS = USMRE.MREHamSliceS,
+      USMRE.MREMeatballswithTomatoSauceHotS = USMRE.MREMeatballswithTomatoSauceS,
+      USMRE.MRETunawithNoodlesHotS = USMRE.MRETunawithNoodlesS,
+      USMRE.MREChickenwithRiceHotS = USMRE.MREChickenwithRiceS,
+      USMRE.MREEscallopedPotatoeswithHamHotS = USMRE.MREEscallopedPotatoeswithHamS,
+    }
+		Time=50,
+		Category=Cooking,
+    Tags = InHandCraft;Cooking;CanBeDoneInDark,
+		}
+
+  craftRecipe Inserthotsauce
+		{
+		inputs
+    {
+		  item 1 [USMRE.MREHotSource],
+      item 1 [USMRE.MREPorkwithRiceinBBQSauce;USMRE.MRECornedBeefHash;USMRE.MREChickenStew;USMRE.MREOmeletwithHam;USMRE.MRESpaghettiwithMeatSauce;USMRE.MREChickenalaKing;USMRE.MREBeefStew;USMRE.MREHamSlice;USMRE.MREMeatballswithTomatoSauce;USMRE.MRETunawithNoodles;USMRE.MREChickenwithRice;USMRE.MREEscallopedPotatoeswithHam;USMRE.MREPorkwithRiceinBBQSauceHot;USMRE.MRECornedBeefHashHot;USMRE.MREChickenStewHot;USMRE.MREOmeletwithHamHot;USMRE.MRESpaghettiwithMeatSauceHot;USMRE.MREChickenalaKingHot;USMRE.MREBeefStewHot;USMRE.MREHamSliceHot;USMRE.MREMeatballswithTomatoSauceHot;USMRE.MRETunawithNoodlesHot;USMRE.MREChickenwithRiceHot;USMRE.MREEscallopedPotatoeswithHamHot] mappers[InsertHotSauce],
+    }
+		outputs {
+      item 1 mapper:InsertHotSauce,
+    }
+    itemMapper InsertHotSauce
+    {
+      USMRE.MREPorkwithRiceinBBQSauceS = USMRE.MREPorkwithRiceinBBQSauce,
+      USMRE.MRECornedBeefHashS = USMRE.MRECornedBeefHash,
+      USMRE.MREChickenStewS = USMRE.MREChickenStew,
+      USMRE.MREOmeletwithHamS = USMRE.MREOmeletwithHam,
+      USMRE.MRESpaghettiwithMeatSauceS = USMRE.MRESpaghettiwithMeatSauce,
+      USMRE.MREChickenalaKingS = USMRE.MREChickenalaKing,
+      USMRE.MREBeefStewS = USMRE.MREBeefStew,
+      USMRE.MREHamSliceS = USMRE.MREHamSlice,
+      USMRE.MREMeatballswithTomatoSauceS = USMRE.MREMeatballswithTomatoSauce,
+      USMRE.MRETunawithNoodlesS = USMRE.MRETunawithNoodles,
+      USMRE.MREChickenwithRiceS = USMRE.MREChickenwithRice,
+      USMRE.MREEscallopedPotatoeswithHamS = USMRE.MREEscallopedPotatoeswithHam,
+      USMRE.MREPorkwithRiceinBBQSauceHotS = USMRE.MREPorkwithRiceinBBQSauceHot,
+      USMRE.MRECornedBeefHashHotS = USMRE.MRECornedBeefHashHot,
+      USMRE.MREChickenStewHotS = USMRE.MREChickenStewHot,
+      USMRE.MREOmeletwithHamHotS = USMRE.MREOmeletwithHamHot,
+      USMRE.MRESpaghettiwithMeatSauceHotS = USMRE.MRESpaghettiwithMeatSauceHot,
+      USMRE.MREChickenalaKingHotS = USMRE.MREChickenalaKingHot,
+      USMRE.MREBeefStewHotS = USMRE.MREBeefStewHot,
+      USMRE.MREHamSliceHotS = USMRE.MREHamSliceHot,
+      USMRE.MREMeatballswithTomatoSauceHotS = USMRE.MREMeatballswithTomatoSauceHot,
+      USMRE.MRETunawithNoodlesHotS = USMRE.MRETunawithNoodlesHot,
+      USMRE.MREChickenwithRiceHotS = USMRE.MREChickenwithRiceHot,
+      USMRE.MREEscallopedPotatoeswithHamHotS = USMRE.MREEscallopedPotatoeswithHamHot,
+    }
+		Time=1,
+		Category=Cooking,
+    Tags = InHandCraft;Cooking;CanBeDoneInDark,
+		}
+
+  craftRecipe CreackersApplyIngredient
+		{
+      inputs
+      {
+        item 1 [USMRE.MRECrackers],
+		    item 1 [USMRE.MREJelly;USMRE.MREPeanutButter;USMRE.MRECheesespread] mappers[CreackersApplyIngredient],
+      }
+		outputs { item 1 mapper:CreackersApplyIngredient,}
+    itemMapper CreackersApplyIngredient
+    {
+      USMRE.MRECrackersJelly = USMRE.MREJelly,
+		  USMRE.MRECrackersPeanutButter = USMRE.MREPeanutButter,
+		  USMRE.MRECrackersCheesespread = USMRE.MRECheesespread,
+    }
+		Time=1,
+		Category=Cooking,
+    Tags = InHandCraft;Cooking;CanBeDoneInDark,
+		}
+
+  craftRecipe Pourwater
+		{
+      inputs
+      {
+      item 1 [*],
+      -fluid 1 [Water],
+  		item 1 [USMRE.MREFreezedriedfruit],
+      }
+		outputs { item 1 USMRE.MREFruit,}
+		Time=10,
+		Category=Cooking,
+    Tags = InHandCraft;Cooking;CanBeDoneInDark,
+		}
+
+  craftRecipe OpenMREAccessoryPacket
+		{
+      inputs
+      {
+		item 1 [USMRE.MREAccessoryPacketA;USMRE.MREAccessoryPacketB] mappers[OpenMREAccessoryPacket1;OpenMREAccessoryPacket2;OpenMREAccessoryPacket3;OpenMREAccessoryPacket4],
+      }
+		outputs {
+      item 1 USMRE.MRECoffee,
+      item 1 mapper:OpenMREAccessoryPacket1,
+      item 1 mapper:OpenMREAccessoryPacket2,
+      item 1 mapper:OpenMREAccessoryPacket3,
+      item 1 mapper:OpenMREAccessoryPacket4,
+    }
+    OnCreate = OnOpenMREAccessoryPacket,
+    itemMapper OpenMREAccessoryPacket1
+    {
+      USMRE.MRECreamSubstitute = USMRE.MREAccessoryPacketA,
+      USMRE.MRECreamSubstitute = USMRE.MREAccessoryPacketB,
+    }
+    itemMapper OpenMREAccessoryPacket2
+    {
+      USMRE.MRESugar = USMRE.MREAccessoryPacketA,
+      USMRE.MRESugar = USMRE.MREAccessoryPacketB,
+    }
+    itemMapper OpenMREAccessoryPacket3
+    {
+      USMRE.MREChewingGum = USMRE.MREAccessoryPacketA,
+      USMRE.MREChewingGum = USMRE.MREAccessoryPacketB,
+    }
+    itemMapper OpenMREAccessoryPacket4
+    {
+      Matches = USMRE.MREAccessoryPacketA,
+      Matches = USMRE.MREAccessoryPacketB,
+    }
+		Time=2,
+		Category=Cooking,
+    Tags = InHandCraft;Cooking;CanBeDoneInDark,
+		}
+
+  craftRecipe PutofMREboxonpallet1
+		{
+      inputs
+      {
+		    item 1 [USMRE.MREbox],
+      }
+		outputs { item 1 USMRE.MREboxPallet01,}
+		Time=20,
+		Category=Cooking,
+    Tags = InHandCraft;Cooking;CanBeDoneInDark,
+		}
+
+	craftRecipe PutofMREboxonpallet2
+		{
+		inputs
+    {
+      item 2 [USMRE.MREbox],
+    }
+		outputs { item 1 USMRE.MREboxPallet02,}
+		Time=20,
+		Category=Cooking,
+    Tags = InHandCraft;Cooking;CanBeDoneInDark,
+		}
+
+	craftRecipe PutofMREboxonpallet3
+		{
+		inputs
+    {
+      item 3 [USMRE.MREbox],
+    }
+		outputs { item 1 USMRE.MREboxPallet03,}
+		Time=20,
+		Category=Cooking,
+    Tags = InHandCraft;Cooking;CanBeDoneInDark,
+		}
+
+	craftRecipe PutofMREboxonpallet4
+		{
+		inputs
+    {
+      item 4 [USMRE.MREbox],
+    }
+		outputs { item 1 USMRE.MREboxPallet04,}
+		Time=20,
+		Category=Cooking,
+    Tags = InHandCraft;Cooking;CanBeDoneInDark,
+		}
+
+	craftRecipe PutofMREboxonpallet5
+		{
+		inputs
+    {
+      item 5 [USMRE.MREbox],
+    }
+		outputs { item 1 USMRE.MREboxPallet05,}
+		Time=20,
+		Category=Cooking,
+    Tags = InHandCraft;Cooking;CanBeDoneInDark,
+		}
+
+	craftRecipe PutofMREboxonpallet6
+		{
+		inputs
+    {
+      item 6 [USMRE.MREbox],
+    }
+		outputs { item 1 USMRE.MREboxPallet06,}
+		Time=20,
+		Category=Cooking,
+    Tags = InHandCraft;Cooking;CanBeDoneInDark,
+		}
+
+	craftRecipe PutofMREboxonpallet7
+		{
+		inputs
+    {
+      item 7 [USMRE.MREbox],
+    }
+		outputs { item 1 USMRE.MREboxPallet07,}
+		Time=20,
+		Category=Cooking,
+    Tags = InHandCraft;Cooking;CanBeDoneInDark,
+		}
+
+	craftRecipe PutofMREboxonpallet8
+		{
+		inputs
+    {
+      item 8 [USMRE.MREbox],
+    }
+		outputs { item 1 USMRE.MREboxPallet08,}
+		Time=20,
+		Category=Cooking,
+    Tags = InHandCraft;Cooking;CanBeDoneInDark,
+		}
+
+	craftRecipe PutofMREboxonpallet9
+		{
+		inputs
+    {
+      item 9 [USMRE.MREbox],
+    }
+		outputs { item 1 USMRE.MREboxPallet09,}
+		Time=20,
+		Category=Cooking,
+    Tags = InHandCraft;Cooking;CanBeDoneInDark,
+		}
+
+	craftRecipe PutofMREboxonpallet10
+		{
+		inputs
+    {
+      item 10 [USMRE.MREbox],
+    }
+		outputs { item 1 USMRE.MREboxPallet10,}
+		Time=20,
+		Category=Cooking,
+    Tags = InHandCraft;Cooking;CanBeDoneInDark,
+		}
+
+	craftRecipe PutofMREboxonpallet11
+		{
+		inputs
+    {
+      item 11 [USMRE.MREbox],
+    }
+		outputs { item 1 USMRE.MREboxPallet11,}
+		Time=20,
+		Category=Cooking,
+    Tags = InHandCraft;Cooking;CanBeDoneInDark,
+		}
+
+	craftRecipe PutofMREboxonpallet12
+		{
+		inputs
+    {
+      item 12 [USMRE.MREbox],
+    }
+		outputs { item 1 USMRE.MREboxPallet12,}
+		Time=20,
+		Category=Cooking,
+    Tags = InHandCraft;Cooking;CanBeDoneInDark,
+		}
+
+  craftRecipe RemoveMREboxfrompallet
+		{
+      inputs
+      {
+        item 1 [USMRE.MREboxPallet01;USMRE.MREboxPallet02;USMRE.MREboxPallet03;USMRE.MREboxPallet04;USMRE.MREboxPallet05;USMRE.MREboxPallet06;USMRE.MREboxPallet07;USMRE.MREboxPallet08;USMRE.MREboxPallet09;USMRE.MREboxPallet10;USMRE.MREboxPallet11;USMRE.MREboxPallet12],
+      }
+      outputs
+      {
+      }
+      OnCreate = RemoveMREboxfrompallet,
+		  Time=20,
+		  Category=Cooking,
+      Tags = InHandCraft;Cooking;CanBeDoneInDark,
+		}
+
+  craftRecipe MakeMRECuppa
+    {
+      timedAction = Making,
+      Time = 20,
+      category = Cooking,
+      Tags = InHandCraft;Cooking,
+      inputs
+      {
+        item 1 [USMRE.MRECoffee],
+        item 1 [*],
+        -fluid 0.2 [Water;TaintedWater],
+        item 1 tags[CoffeeMaker],
+        +fluid 0.2 MRECuppa,
+        item 1 [USMRE.MRECreamSubstitute],
+        item 1 [USMRE.MRESugar],
+      }
+      outputs
+      {
+      }
+    }
+  craftRecipe MakeMRECuppaCocoa
+    {
+      timedAction = Making,
+      Time = 20,
+      category = Cooking,
+      Tags = InHandCraft;Cooking,
+      inputs
+      {
+        item 1 [USMRE.MRECocoa],
+        item 1 [*],
+        -fluid 0.2 [Water;TaintedWater],
+        item 1 tags[CoffeeMaker],
+        +fluid 0.2 MRECuppaCocoa,
+      }
+      outputs
+      {
+      }
+    }
+  craftRecipe MakeMREBevBasewithSugarCuppa
+    {
+      timedAction = Making,
+      Time = 20,
+      category = Cooking,
+      Tags = InHandCraft;Cooking,
+      inputs
+      {
+        item 1 [USMRE.MREBevBasewithSugar],
+        item 1 [*],
+        -fluid 0.2 [Water;TaintedWater],
+        item 1 tags[CoffeeMaker],
+        +fluid 0.2 MREBevBasewithSugarCuppa,
+      }
+      outputs
+      {
+      }
+    }
+  craftRecipe MakeMRESugarFreeBevBase
+    {
+      timedAction = Making,
+      Time = 20,
+      category = Cooking,
+      Tags = InHandCraft;Cooking,
+      inputs
+      {
+        item 1 [USMRE.MRESugarFreeBevBase],
+        item 1 [*],
+        -fluid 0.2 [Water;TaintedWater],
+        item 1 tags[CoffeeMaker],
+        +fluid 0.2 MRESugarFreeBevBase,
+      }
+      outputs
+      {
+      }
+    }
+}
