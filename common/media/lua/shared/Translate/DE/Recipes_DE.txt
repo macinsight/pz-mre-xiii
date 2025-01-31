@@ -2,8 +2,7 @@ Recipe_EN = {
 
 -- Encoding UTF-8
 -- MRE XIII (1993) - Meal Ready to Eat MOD
--- Translated by TheMadmanAndre
--- Updated 2025-01-31 by macinsight
+-- Translated by macinsight
 
   CreackersApplyIngredient = "Add topping",
 	Heatwithaheater = "Heat with FRH",

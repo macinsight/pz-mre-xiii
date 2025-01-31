@@ -14,7 +14,7 @@ item MREbox
 	{
 		DisplayName					=	Box of MREs,
 		Icon						=	mre_box,
-		Weight						=	3.75,
+		Weight						=	10,
 		DisplayCategory 			=	Item,
 		ResizeWorldIcon 			=	1.0,
 		WorldStaticModel			=	MRE_Boxs,
