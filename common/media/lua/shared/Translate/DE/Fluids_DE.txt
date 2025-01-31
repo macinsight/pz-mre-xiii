@@ -1,11 +1,10 @@
-Fluids_EN = {
+Fluids_DE = {
 
 -- Encoding UTF-8
 -- MRE XIII (1993) - Meal Ready to Eat MOD
--- Translated by TheMadmanAndre
--- Updated 2025-01-31 by macinsight
+-- Translated by macinsight
 
-  Fluid_Name_USMRE_Cuppa = "Coffee",
+  Fluid_Name_USMRE_Cuppa = "Kaffee",
   Fluid_Name_USMRE_CuppaCocoa = "Cocoa",
   Fluid_Name_USMRE_BevBasewithSugarCuppa = "Sugary Beverage",
   Fluid_Name_USMRE_SugarFreeBevBaseCuppa = "Sugarfree Beverage",
