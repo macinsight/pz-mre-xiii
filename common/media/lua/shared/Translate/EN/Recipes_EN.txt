@@ -3,6 +3,7 @@ Recipe_EN = {
 -- Encoding UTF-8
 -- MRE XIII (1993) - Meal Ready to Eat MOD
 -- Translated by TheMadmanAndre
+-- Updated 2025-01-31 by macinsight
 
   CreackersApplyIngredient = "Add topping",
 	Heatwithaheater = "Heat with FRH",
@@ -27,8 +28,8 @@ Recipe_EN = {
   OpenMREAccessoryPacket = "Open MRE Accessory Packet"
   OpenMREBox = "Open MRE Box"
 
-  MakeMRECuppa = "Make Cuppa",
-  MakeMRECuppaCocoa = "Make Cuppa",
+  MakeMRECuppa = "Brew Cuppa",
+  MakeMRECuppaCocoa = "Brew Cocoa",
   MakeMREBevBasewithSugarCuppa = "Make Cuppa",
   MakeMRESugarFreeBevBase = "Make Cuppa",
 }
