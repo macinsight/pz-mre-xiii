@@ -1,4 +1,5 @@
 ﻿ItemName_EN = {
+-- Updated translation by macinsight
 
 	ItemName_USMRE.MREAccessoryPacketA = "MRE Accessory Packet A",
 	ItemName_USMRE.MREAccessoryPacketB = "MRE Accessory Packet B",
